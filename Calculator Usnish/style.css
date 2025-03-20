@@ -1,0 +1,71 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+}
+
+.calculator {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 320px;
+}
+
+.brand {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.screen {
+  width: 100%;
+  height: 50px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.5em;
+  text-align: right;
+  margin-bottom: 20px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 1.2em;
+  border: none;
+  background: #4c89da;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: #356bb0;
+}
+
+button:active {
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:nth-child(4n) {
+  background: #f06c64; /* Red for operators */
+}
+
+button:nth-child(4n):hover {
+  background: #c35654;
+}
